@@ -1,4 +1,4 @@
-# NEWPASTEBIN PROJECT
+# NEWPASTEBIN PROJECT  
 ### This application is built on Java, Spring Boot (Web, Data JPA, Cloud), Kafka, PostgreSQL, Liquibase, divided on several microservices and containerized with docker-compose
 ![](newpastebin-demonstration.png)
 
@@ -34,7 +34,7 @@
 ### Liquibase create both tables and add 1 user to table "users".
 
 # Docker:   
-### To launch application containers use "docker-compose up -d".
+### To launch application containers use `docker-compose up -d`.
 ### You can also set "SENDER_EMAIL_PASSWORD" and "SENDER_EMAIL_USERNAME" environment variables (notification_service) for sending emails. 
 
 # HTTP-requests:  
