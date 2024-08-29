@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: notification-service
+  kafka:
+    consumer:
+      bootstrap-servers: ${KAFKA_SERVER:kafka:9092}
+      group-id: notification-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+    bootstrap-servers: ${KAFKA_SERVER:kafka:9092}
+  mail:
+    username: ${SENDER_EMAIL_USERNAME}
+    password: ${SENDER_EMAIL_PASSWORD}
+    host: smtp.yandex.ru
+    port: 465
+    protocol: smtps
+pasteService:
+  url: http://localhost:8765/paste-service/

@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: USERS-insert
+      author: zlatin-sa
+      changes:
+        - insert:
+            tableName: USERS
+            columns:
+              - column:
+                  name: USERNAME
+                  value: Sergey
+              - column:
+                  name: PASSWORD
+                  value: Goodman
+              - column:
+                  name: EMAIL
+                  value: examplemail@paste.com
