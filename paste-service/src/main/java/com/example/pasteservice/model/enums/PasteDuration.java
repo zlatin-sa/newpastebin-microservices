@@ -16,7 +16,7 @@ public enum PasteDuration {
     ONE_DAY(Duration.ofDays(1)),
     ONE_WEEK(Duration.ofDays(7)),
     ONE_MONTH(Duration.ofDays(30)),
-    INFINITY(Duration.ofDays(1000000000));
+    INFINITY(Duration.ofDays(10000));
 
     private final Duration duration;
 
