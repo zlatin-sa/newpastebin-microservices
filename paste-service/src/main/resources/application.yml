@@ -21,6 +21,8 @@ spring:
     bootstrap-servers: ${KAFKA_SERVER:kafka:9092}
   liquibase:
     enabled: true
+    database-change-log-lock-table: DATABASECANGELOGLOCKPASTE
+    database-change-log-table: DATABASECHANGELOGPASTE
 server:
   port: 8081
 eureka:
