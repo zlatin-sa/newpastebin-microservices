@@ -34,7 +34,7 @@
 ### Liquibase create both tables and add 1 user to table "users".
 
 # Docker:   
-### To build project use `mvn clean install`.
+### To build project use `mvn clean install` on base-domains and then on newpastebin-microservices.
 ### To launch application containers use `docker-compose up -d`.
 ### You can also set "SENDER_EMAIL_PASSWORD" and "SENDER_EMAIL_USERNAME" environment variables (notification_service) for sending emails. 
 
