@@ -2,7 +2,7 @@ spring:
   application:
     name: user-service
   datasource:
-    url: ${DB_URL:jdbc:postgresql://postgres_db:5432/postgres_db}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/postgres}
     username: ${DB_USER:postgres}
     password: ${DB_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
@@ -14,11 +14,10 @@ spring:
         hbm2ddl:
           auto: none
   kafka:
+    bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
     producer:
-      bootstrap-servers: ${KAFKA_SERVER:kafka:9092}
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-    bootstrap-servers: ${KAFKA_SERVER:kafka:9092}
   liquibase:
     enabled: true
     database-change-log-lock-table: DATABASECANGELOGLOCKUSERS
@@ -28,4 +27,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URL:http://eureka-server:8761/eureka}
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
