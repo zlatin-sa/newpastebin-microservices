@@ -1,5 +1,6 @@
-# NEWPASTEBIN PROJECT  
-### This application is built on Java, Spring Boot (Web, Data JPA, Cloud), Kafka, PostgreSQL, Liquibase, divided on several microservices and containerized with docker-compose
+# NEWPASTEBIN PROJECT
+### Newpastebin is a web platform designed for storing and sharing text information between users.
+### This application is built on Java, Spring Boot (Web, Data JPA, Cloud), Kafka, PostgreSQL, Liquibase, divided on several microservices and containerized with docker-compose.
 ![](newpastebin-demonstration.png)
 
 # Eureka server:  
